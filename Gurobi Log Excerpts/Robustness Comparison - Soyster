@@ -1,0 +1,78 @@
+Robustness Comparison - Soyster Approach:
+
+Parameters:
+W = 100
+K = 3
+Duplications = 10
+s = 5
+r = 10
+Starting Positions = 1.0, 1.01, 2.0
+
+Gurobi Log Excerpt:
+Academic license - for non-commercial use only - expires 2021-07-06
+Using license file /Users/ellajohnsen/gurobi.lic
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (mac64)
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 1101 rows, 886 columns and 12925 nonzeros
+Model fingerprint: 0x58cc368e
+Variable types: 42 continuous, 844 integer (844 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+02]
+  Objective range  [3e+02, 1e+06]
+  Bounds range     [1e+00, 1e+02]
+  RHS range        [1e+00, 1e+02]
+Found heuristic solution: objective 1.700000e+07
+Presolve removed 708 rows and 494 columns
+Presolve time: 0.09s
+Presolved: 393 rows, 392 columns, 3845 nonzeros
+Variable types: 27 continuous, 365 integer (365 binary)
+
+Root relaxation: objective 1.001140e+07, 224 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1.0011e+07    0   46 1.7000e+07 1.0011e+07  41.1%     -    0s
+H    0     0                    1.600320e+07 1.0011e+07  37.4%     -    0s
+H    0     0                    1.600120e+07 1.0011e+07  37.4%     -    0s
+H    0     0                    1.500500e+07 1.0011e+07  33.3%     -    0s
+H    0     0                    1.500300e+07 1.0011e+07  33.3%     -    0s
+     0     0 1.0011e+07    0   76 1.5003e+07 1.0011e+07  33.3%     -    0s
+     0     0 1.0011e+07    0   75 1.5003e+07 1.0011e+07  33.3%     -    0s
+     0     0 1.0011e+07    0   32 1.5003e+07 1.0011e+07  33.3%     -    0s
+H    0     0                    1.300540e+07 1.0011e+07  23.0%     -    0s
+     0     0 1.0011e+07    0   30 1.3005e+07 1.0011e+07  23.0%     -    0s
+     0     0 1.0011e+07    0   39 1.3005e+07 1.0011e+07  23.0%     -    0s
+     0     0 1.0011e+07    0   38 1.3005e+07 1.0011e+07  23.0%     -    0s
+     0     0 1.0012e+07    0   53 1.3005e+07 1.0012e+07  23.0%     -    0s
+     0     0 1.0012e+07    0   48 1.3005e+07 1.0012e+07  23.0%     -    0s
+     0     0 1.0012e+07    0   61 1.3005e+07 1.0012e+07  23.0%     -    0s
+     0     0 1.0012e+07    0   56 1.3005e+07 1.0012e+07  23.0%     -    0s
+     0     0 1.0012e+07    0   57 1.3005e+07 1.0012e+07  23.0%     -    0s
+     0     0 1.0012e+07    0   42 1.3005e+07 1.0012e+07  23.0%     -    0s
+     0     2 1.0012e+07    0   31 1.3005e+07 1.0012e+07  23.0%     -    0s
+H   35    24                    1.300420e+07 1.0012e+07  23.0%  47.2    0s
+H   63    32                    1.300300e+07 1.0012e+07  23.0%  34.3    0s
+H   76    32                    1.200660e+07 1.0012e+07  16.6%  32.4    0s
+
+Cutting planes:
+  Learned: 13
+  Gomory: 6
+  Cover: 351
+  Implied bound: 26
+  Clique: 27
+  MIR: 44
+  StrongCG: 5
+  GUB cover: 5
+  Inf proof: 6
+  Zero half: 7
+  RLT: 8
+  Relax-and-lift: 11
+
+Explored 5780 nodes (122644 simplex iterations) in 2.58 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 9: 1.20066e+07 1.3003e+07 1.30042e+07 ... 1.7e+07
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.200660000000e+07, best bound 1.200660000000e+07, gap 0.0000%

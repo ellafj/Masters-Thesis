@@ -1,0 +1,65 @@
+Fleet Comparison - K=5:
+
+Parameters:
+W = 100
+K = 5
+Duplications = 10
+s = 5
+r = 10
+Starting Positions = 1.0, 1.01, 1.02, 2, 2.01
+
+Gurobi Log Excerpt:
+Academic license - for non-commercial use only - expires 2021-07-06
+Using license file /Users/ellajohnsen/gurobi.lic
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (mac64)
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 1103 rows, 888 columns and 12935 nonzeros
+Model fingerprint: 0xaa14ba35
+Variable types: 42 continuous, 846 integer (846 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+02]
+  Objective range  [3e+02, 1e+06]
+  Bounds range     [1e+00, 1e+02]
+  RHS range        [1e+00, 1e+02]
+Found heuristic solution: objective 1.500200e+07
+Presolve removed 604 rows and 367 columns
+Presolve time: 0.05s
+Presolved: 499 rows, 521 columns, 5078 nonzeros
+Variable types: 29 continuous, 492 integer (492 binary)
+
+Root relaxation: objective 6.017700e+06, 325 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 6017700.00    0   48 1.5002e+07 6017700.00  59.9%     -    0s
+H    0     0                    1.500000e+07 6017700.00  59.9%     -    0s
+H    0     0                    1.301250e+07 6017700.00  53.8%     -    0s
+     0     0 6017700.00    0   63 1.3012e+07 6017700.00  53.8%     -    0s
+H    0     0                    1.301050e+07 6017700.00  53.7%     -    0s
+H    0     0                    8017700.0000 6017700.00  24.9%     -    0s
+     0     0 6017700.00    0   46 8017700.00 6017700.00  24.9%     -    0s
+H    0     0                    6017700.0000 6017700.00  0.00%     -    0s
+     0     0 6017700.00    0   17 6017700.00 6017700.00  0.00%     -    0s
+
+Cutting planes:
+  Learned: 1
+  Gomory: 12
+  Cover: 16
+  Implied bound: 4
+  Clique: 13
+  MIR: 40
+  StrongCG: 5
+  GUB cover: 6
+  Zero half: 1
+  Mod-K: 1
+  RLT: 3
+  Relax-and-lift: 2
+
+Explored 1 nodes (1236 simplex iterations) in 0.16 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 6: 6.0177e+06 8.0177e+06 1.30105e+07 ... 1.5002e+07
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.017700000000e+06, best bound 6.017700000000e+06, gap 0.0000%

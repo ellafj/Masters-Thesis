@@ -1,0 +1,62 @@
+Fleet Comparison - K=10:
+
+Parameters:
+W = 100
+K = 10
+Duplications = 10
+s = 5
+r = 10
+Starting Positions = 1.0, 1.01, 1.02, 1.03, 1.04, 2.0, 2.01, 2.02, 2.03, 2.04
+
+Gurobi Log Excerpt:
+Academic license - for non-commercial use only - expires 2021-07-06
+Using license file /Users/ellajohnsen/gurobi.lic
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (mac64)
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 1108 rows, 893 columns and 12960 nonzeros
+Model fingerprint: 0x5b69b0af
+Variable types: 42 continuous, 851 integer (851 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+02]
+  Objective range  [3e+02, 1e+06]
+  Bounds range     [1e+00, 1e+02]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 821 rows and 477 columns
+Presolve time: 0.04s
+Presolved: 287 rows, 416 columns, 3437 nonzeros
+Variable types: 24 continuous, 392 integer (392 binary)
+Found heuristic solution: objective 1.000000e+07
+
+Root relaxation: objective 6.013500e+06, 261 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 6013500.00    0   58 1.0000e+07 6013500.00  39.9%     -    0s
+H    0     0                    7017300.0000 6013500.00  14.3%     -    0s
+H    0     0                    7015300.0000 6013500.00  14.3%     -    0s
+H    0     0                    6016700.0000 6013500.00  0.05%     -    0s
+H    0     0                    6015900.0000 6013500.00  0.04%     -    0s
+     0     0 6013500.00    0   43 6015900.00 6013500.00  0.04%     -    0s
+     0     0 6013500.00    0   42 6015900.00 6013500.00  0.04%     -    0s
+H    0     0                    6013500.0000 6013500.00  0.00%     -    0s
+
+Cutting planes:
+  Learned: 2
+  Gomory: 13
+  Cover: 24
+  Implied bound: 2
+  Clique: 13
+  MIR: 20
+  StrongCG: 10
+  GUB cover: 9
+  Zero half: 6
+  Relax-and-lift: 4
+
+Explored 1 nodes (492 simplex iterations) in 0.11 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 6: 6.0135e+06 6.0159e+06 6.0167e+06 ... 1e+07
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.013500000000e+06, best bound 6.013500000000e+06, gap 0.0000%
