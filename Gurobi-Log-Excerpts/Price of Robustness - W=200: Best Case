@@ -3,7 +3,7 @@ Price of Robustness - W=200 for the best case
 Parameters:
 W = 200
 K = 3
-Duplications = 15
+Duplications = 20
 s = 5
 r = 10
 Starting Positions = 1.0, 1.01, 2.0
