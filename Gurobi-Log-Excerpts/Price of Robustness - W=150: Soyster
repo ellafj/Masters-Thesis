@@ -8,6 +8,7 @@ s = 5
 r = 10
 Starting Positions = 1.0, 1.01, 2.0
 
+Gurobi Log Excerpt:
 Academic license - for non-commercial use only - expires 2021-07-06
 Using license file /Users/ellajohnsen/gurobi.lic
 Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (mac64)

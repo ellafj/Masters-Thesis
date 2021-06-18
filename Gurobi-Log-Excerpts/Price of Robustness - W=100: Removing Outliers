@@ -1,6 +1,7 @@
 Price of Robustness - W=100 with the Removing Outliers Approach:
 
 Parameters:
+xi = 0.7
 W = 100
 K = 3
 Duplications = 10
